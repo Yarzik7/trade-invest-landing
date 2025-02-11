@@ -1,0 +1,24 @@
+// Colors
+
+$accent-color: #4f62f6;
+$title-color: #333333;
+$primary-text-color: #4f4f4f;
+$secondary-text-color: #828282;
+$bg-color: #f0edff;
+$btn-text-color: #ffffff;
+$btn-hover-bg-color: #7181fc;
+$btn-active-bg-color: #354bf4;
+$btn-disabled-bg-color: #e0e0e0;
+
+// Breakpoints
+
+$mobile: 320px;
+$to-tablet: 767px;
+$tablet: 768px;
+$to-desktop: 1439px;
+$desktop: 1440px;
+
+// Transitions
+
+$transition-duration: 300ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

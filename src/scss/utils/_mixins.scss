@@ -1,0 +1,50 @@
+@use 'sass:math';
+
+@mixin media($_screen) {
+  @if $_screen == mobile {
+    @media screen and (min-width: $mobile) {
+      @content;
+    }
+  } @else if $_screen == to-tablet {
+    @media screen and (max-width: $to-tablet) {
+      @content;
+    }
+  } @else if $_screen == tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  } @else if $_screen == to-desktop {
+    @media screen and (max-width: $to-desktop) {
+      @content;
+    }
+  } @else if $_screen == desktop {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+}
+
+@mixin font($font-size, $line-height) {
+  font-size: #{$font-size}px;
+
+  $result: math.div($line-height, $font-size);
+
+  line-height: math.div(math.round($result * 100), 100);
+}
+
+@mixin centeredByFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin getSize($width, $height) {
+  width: #{$width}px;
+  height: #{$height}px;
+}
+
+@mixin transition($property...) {
+  transition-property: $property;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}

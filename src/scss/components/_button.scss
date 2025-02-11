@@ -1,0 +1,28 @@
+.action-button {
+  @include centeredByFlex();
+
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  @include font(16, 14);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $btn-text-color;
+
+  background-color: $accent-color;
+  border: none;
+  border-radius: 60px;
+
+  @include transition(background-color);
+
+  &:hover {
+    background-color: $btn-hover-bg-color;
+  }
+
+  &:active {
+    background-color: $btn-active-bg-color;
+  }
+
+  &:disabled {
+    background-color: $btn-disabled-bg-color;
+  }
+}

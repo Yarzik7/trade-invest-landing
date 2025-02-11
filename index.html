@@ -4,7 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TradeInvest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/css/main.min.css" />
     <script type="module" src="./src/js/index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container"></div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-description-box">
+            <h1 class="section-title hero-section-title">Trade everywhere. Invest here!</h1>
+
+            <p class="hero-description">
+              We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and
+              convenient platform for access to global exchanges. You can work anywhere.
+            </p>
+
+            <button type="button" class="action-button hero-action-button">Start trading</button>
+          </div>
+
+          <div class="hero-image-box">
+            <svg width="280" height="301" class="hero-image">
+              <use href="./src/images/sprite.svg#chart"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+  </body>
 </html>
