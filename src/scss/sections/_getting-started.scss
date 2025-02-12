@@ -1,0 +1,30 @@
+.getting-started-section-title {
+  margin-bottom: 40px;
+
+  text-align: left;
+}
+
+.getting-started-list {
+  &__item {
+    padding: 24px;
+    border: 2px solid $accent-color;
+    border-radius: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 24px;
+    @include font(24, 28.8);
+  }
+
+  &__description {
+    @include font(18, 30);
+  }
+
+  & .numbering {
+    margin-bottom: 8px;
+  }
+}

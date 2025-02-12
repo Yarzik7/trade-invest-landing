@@ -8,6 +8,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: $primary-text-color;
+
+  //   background-color: $body-bg-color;
 }
 
 h1,
@@ -20,8 +22,7 @@ h3 {
 
 .section {
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
 }
 
 .container {

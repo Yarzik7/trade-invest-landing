@@ -1,0 +1,7 @@
+.numbering {
+  display: block;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  @include font(15, 18);
+  font-weight: 500;
+  color: $accent-color;
+}
