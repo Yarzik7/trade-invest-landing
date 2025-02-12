@@ -19,7 +19,57 @@
   </head>
   <body>
     <header class="header">
-      <div class="container"></div>
+      <div class="container header-container">
+        <a href="/" class="logo">Logo</a>
+
+        <button type="button" class="burger-menu-button js-menu-btn">
+          <svg width="24" height="24" class="burger-menu-icon">
+            <use href="./src/images/sprite.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="burger-menu js-burger-menu">
+        <div class="container burger-menu-container">
+          <div class="burger-menu__control-panel">
+            <a href="/" class="logo">Logo</a>
+
+            <button type="button" class="burger-menu-button burger-menu-button-close js-menu-btn-close">
+              <svg width="24" height="24" class="burger-menu-icon burger-menu-icon-close">
+                <use href="./src/images/sprite.svg#plus"></use>
+              </svg>
+            </button>
+          </div>
+
+          <nav class="burger-menu-nav">
+            <ul class="burger-menu-nav-list">
+              <li class="burger-menu-nav-list__item">
+                <a href="#" class="burger-menu-nav-list__link">How it works</a>
+              </li>
+
+              <li class="burger-menu-nav-list__item">
+                <a href="#" class="burger-menu-nav-list__link">About</a>
+              </li>
+
+              <li class="burger-menu-nav-list__item">
+                <a href="#" class="burger-menu-nav-list__link">Instructions</a>
+              </li>
+
+              <li class="burger-menu-nav-list__item">
+                <a href="#" class="burger-menu-nav-list__link">Accounts</a>
+              </li>
+
+              <li class="burger-menu-nav-list__item">
+                <a href="#" class="burger-menu-nav-list__link">Platforms</a>
+              </li>
+
+              <li class="burger-menu-nav-list__item">
+                <a href="#" class="burger-menu-nav-list__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <main>

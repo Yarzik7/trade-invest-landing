@@ -9,7 +9,9 @@ body {
   font-weight: 400;
   color: $primary-text-color;
 
-  //   background-color: $body-bg-color;
+  &.isOpen {
+    overflow: hidden;
+  }
 }
 
 h1,
