@@ -108,6 +108,76 @@ h3 {
   margin-bottom: 32px;
 }
 
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.footer-nav-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.footer-nav-list__link {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-size: 15px;
+  line-height: 1.07;
+  font-weight: 500;
+  color: #333333;
+}
+
+.legal-info-list__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.legal-info-list__title {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.67;
+}
+.legal-info-list__description {
+  font-size: 16px;
+  line-height: 1.69;
+}
+
+.legal-page-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.center-note {
+  font-size: 16px;
+  line-height: 1.69;
+  text-align: center;
+}
+
+.legal-pages-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.legal-pages-nav-list__item {
+  text-align: center;
+}
+.legal-pages-nav-list__link {
+  font-size: 16px;
+  line-height: 1.69;
+}
+
 .logo {
   display: block;
   font-family: "Museo Sans Cyrl", sans-serif;
