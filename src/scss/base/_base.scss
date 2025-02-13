@@ -44,5 +44,7 @@ h3 {
 }
 
 .section-title {
+  margin-bottom: 40px;
+
   @include font(40, 44);
 }
