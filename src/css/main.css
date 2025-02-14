@@ -865,9 +865,58 @@ h3 {
   padding: 48px 0;
   background-color: #f0edff;
 }
+@media screen and (min-width: 1440px) {
+  .contact-us-section {
+    padding: 120px 0;
+  }
+}
+
+.contact-us-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 48px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .contact-us-container {
+    padding: 0 130px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact-us-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 132px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-info-box {
+    width: 483px;
+  }
+}
 
 .contact-us-section-title {
   margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .contact-us-section-title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-us-section-title {
+    margin-bottom: 32px;
+  }
 }
 
 .contact-us-description {
@@ -875,19 +924,36 @@ h3 {
   font-size: 18px;
   line-height: 1.67;
 }
+@media screen and (min-width: 768px) {
+  .contact-us-description {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact-us-description {
+    margin-bottom: 48px;
+  }
+}
 
 .owner-description {
   margin-bottom: 17px;
   font-size: 16px;
   line-height: 1.69;
 }
+@media screen and (min-width: 768px) {
+  .owner-description {
+    margin-bottom: 24px;
+  }
+}
 
 .address {
   font-style: normal;
 }
 
-.address-list {
-  margin-bottom: 48px;
+@media screen and (min-width: 768px) {
+  .address-list__item {
+    width: 483px;
+  }
 }
 .address-list__item:not(:last-child) {
   margin-bottom: 16px;
@@ -907,6 +973,17 @@ h3 {
   border: 2px solid #4f62f6;
   border-radius: 20px;
 }
+@media screen and (min-width: 768px) {
+  .contact-form {
+    padding: 78px 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact-form {
+    width: 585px;
+    padding: 78px;
+  }
+}
 
 .fieldset {
   display: block;
@@ -914,6 +991,11 @@ h3 {
   padding: 0;
   margin-bottom: 48px;
   border: none;
+}
+@media screen and (min-width: 768px) {
+  .fieldset {
+    margin-bottom: 40px;
+  }
 }
 
 .input-box:not(:last-child) {

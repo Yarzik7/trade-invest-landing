@@ -2,20 +2,65 @@
   padding: 48px 0;
 
   background-color: $bg-color;
+
+  @include media(desktop) {
+    padding: 120px 0;
+  }
+}
+
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @include media(tabletOnly) {
+    padding: 0 130px;
+  }
+
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: center;
+    gap: 132px;
+  }
+}
+
+.contact-info-box {
+  @include media(desktop) {
+    width: 483px;
+  }
 }
 
 .contact-us-section-title {
   margin-bottom: 24px;
+
+  @include media(tabletOnly) {
+    text-align: center;
+  }
+
+  @include media(tablet) {
+    margin-bottom: 32px;
+  }
 }
 
 .contact-us-description {
   margin-bottom: 24px;
   @include font(18, 30);
+
+  @include media(tablet) {
+    margin-bottom: 32px;
+  }
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
 }
 
 .owner-description {
   margin-bottom: 17px;
   @include font(16, 27);
+
+  @include media(tablet) {
+    margin-bottom: 24px;
+  }
 }
 
 .address {
@@ -23,9 +68,11 @@
 }
 
 .address-list {
-  margin-bottom: 48px;
-
   &__item {
+    @include media(tablet) {
+      width: 483px;
+    }
+
     &:not(:last-child) {
       margin-bottom: 16px;
     }
@@ -45,6 +92,15 @@
   padding: 48px 16px;
   border: 2px solid $accent-color;
   border-radius: 20px;
+
+  @include media(tablet) {
+    padding: 78px 40px;
+  }
+
+  @include media(desktop) {
+    width: 585px;
+    padding: 78px;
+  }
 }
 
 .fieldset {
@@ -53,6 +109,10 @@
   padding: 0;
   margin-bottom: 48px;
   border: none;
+
+  @include media(tablet) {
+    margin-bottom: 40px;
+  }
 }
 
 .input-box {
