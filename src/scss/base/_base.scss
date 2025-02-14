@@ -47,4 +47,13 @@ h3 {
   margin-bottom: 40px;
 
   @include font(40, 44);
+
+  @include media(tablet) {
+    margin-bottom: 56px;
+    @include font(56, 66);
+  }
+
+  @include media(desktop) {
+    margin-bottom: 68px;
+  }
 }

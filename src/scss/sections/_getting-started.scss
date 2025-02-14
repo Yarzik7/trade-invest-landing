@@ -1,15 +1,94 @@
 .getting-started-section-title {
   text-align: left;
+
+  @include media(tablet) {
+    width: 419px;
+  }
+
+  @include media(desktop) {
+    width: 483px;
+  }
 }
 
 .getting-started-list {
   &__item {
-    padding: 24px;
+    position: relative;
+    padding: 22px;
     border: 2px solid $accent-color;
     border-radius: 30px;
 
-    &:not(:last-child) {
-      margin-bottom: 24px;
+    @include media(to-tablet) {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+
+    @include media(tablet) {
+      width: 329px;
+      padding: 30px;
+
+      &:nth-child(2n) {
+        margin-left: auto;
+      }
+
+      &:not(:first-child) {
+        margin-top: -77px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 100%;
+
+          display: block;
+          @include getSize(193, 58.5);
+
+          border: 3px dashed $accent-color;
+          border-left: none;
+          border-bottom: none;
+          border-top-right-radius: 30px;
+        }
+      }
+
+      &:nth-child(2n) {
+        &::before {
+          right: 166px;
+        }
+      }
+
+      &:nth-child(3n) {
+        &::before {
+          left: 166px;
+          transform: scaleX(-1);
+        }
+      }
+    }
+
+    @include media(desktop) {
+      width: 483px;
+
+      &:nth-child(2n) {
+        margin-left: 615px;
+      }
+
+      &:not(:first-child) {
+        margin-top: -60px;
+
+        &::before {
+          @include getSize(374, 69.5);
+        }
+      }
+
+      &:nth-child(2n) {
+        &::before {
+          right: 241px;
+        }
+      }
+
+      &:nth-child(3n) {
+        &::before {
+          left: 241px;
+        }
+      }
     }
   }
 
