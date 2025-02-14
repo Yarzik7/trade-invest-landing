@@ -557,4 +557,91 @@ h3 {
 .swiper-pagination {
   bottom: 15px;
   pointer-events: none;
+}
+
+.faq-section {
+  padding-bottom: 80px;
+}
+
+.faq-list__item {
+  padding: 22px 14px;
+  border: 2px solid #4f62f6;
+  border-radius: 15px;
+}
+.faq-list__item.active .faq-button {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+.faq-list__item.active .question-box {
+  padding-bottom: 24px;
+}
+.faq-list__item.active .faq-list__answer {
+  max-height: 100vh;
+}
+.faq-list__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.faq-list__question {
+  font-size: 18px;
+  line-height: 1.2;
+}
+.faq-list__answer {
+  font-size: 16px;
+  line-height: 1.69;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition-property: max-height;
+  transition-property: max-height;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.question-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: padding-bottom;
+  transition-property: padding-bottom;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  -webkit-transition-property: fill, -webkit-transform;
+  transition-property: fill, -webkit-transform;
+  transition-property: fill, transform;
+  transition-property: fill, transform, -webkit-transform;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq-button:hover {
+  fill: #7181fc;
+}
+.faq-button:active {
+  fill: #354bf4;
 }/*# sourceMappingURL=main.css.map */
