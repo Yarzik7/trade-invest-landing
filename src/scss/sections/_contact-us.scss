@@ -1,0 +1,113 @@
+.contact-us-section {
+  padding: 48px 0;
+
+  background-color: $bg-color;
+}
+
+.contact-us-section-title {
+  margin-bottom: 24px;
+}
+
+.contact-us-description {
+  margin-bottom: 24px;
+  @include font(18, 30);
+}
+
+.owner-description {
+  margin-bottom: 17px;
+  @include font(16, 27);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-list {
+  margin-bottom: 48px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__type {
+    margin-bottom: 8px;
+    @include font(15, 16);
+  }
+
+  &__link {
+    @include font(16, 27);
+  }
+}
+
+.contact-form {
+  padding: 48px 16px;
+  border: 2px solid $accent-color;
+  border-radius: 20px;
+}
+
+.fieldset {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+  border: none;
+}
+
+.input-box {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.input,
+.message-input {
+  width: 100%;
+  padding: 0 15px;
+
+  @include font(16, 26);
+  color: $primary-text-color;
+
+  outline: none;
+  border: 1px solid $btn-disabled-bg-color;
+  border-radius: 3px;
+
+  @include transition(border-color);
+
+  &:hover,
+  &:focus {
+    border-color: $secondary-text-color;
+  }
+
+  &::placeholder {
+    color: $secondary-text-color;
+  }
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+  &:valid {
+    border-color: $valid-input-color;
+  }
+
+  &:invalid {
+    border-color: $invalid-input-color;
+  }
+}
+
+.message-input {
+  display: block;
+  height: 89px;
+  padding: 7px 15px;
+  margin: 0;
+  resize: none;
+}
+
+.submit-button {
+  margin: 0 auto;
+  @include getSize(172, 54);
+}
