@@ -1,10 +1,39 @@
 .reviews-container {
   position: relative;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    min-width: 0;
+  }
+}
+
+.reviews-section-title {
+  @include media(tablet) {
+    width: 509px;
+  }
 }
 
 .reviews-swiper {
-  //   margin-bottom: 24px;
   padding-bottom: 72px;
+
+  @include media(tablet) {
+    width: 508px;
+    padding-bottom: 50px;
+  }
+
+  @include media(desktop) {
+    width: 633px;
+    padding-top: 27px;
+    padding-left: 48px;
+  }
+}
+
+.swiper.reviews-swiper {
+  @include media(desktop) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .user-info-box {
@@ -14,6 +43,16 @@
   gap: 8px;
 
   margin-bottom: 24px;
+
+  @include media(tablet) {
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .avatar-box {
@@ -31,7 +70,9 @@
 }
 
 .user-credentials {
-  text-align: center;
+  @include media(to-desktop) {
+    text-align: center;
+  }
 }
 
 .username {
@@ -72,6 +113,20 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include media(tablet) {
+      margin-bottom: 16px;
+    }
+
+    @include media(desktop) {
+      position: absolute;
+      left: -48px;
+    }
+  }
+
+  @include media(desktop) {
+    position: relative;
+    text-align: left;
   }
 }
 
@@ -85,6 +140,18 @@
   justify-content: space-between;
   width: 100%;
   padding: 0 20px;
+
+  @include media(tablet) {
+    bottom: 165px;
+    padding: 0 40px;
+  }
+
+  @include media(desktop) {
+    bottom: 37px;
+    padding: 0 120px;
+    justify-content: flex-start;
+    gap: 16px;
+  }
 }
 
 .slider-button-prev,
@@ -121,7 +188,15 @@
 }
 
 .swiper-pagination {
-  //   position: static;
   bottom: 15px;
   pointer-events: none;
+
+  @include media(tablet) {
+    bottom: 0;
+  }
+
+  @include media(desktop) {
+    text-align: left;
+    padding-left: 48px;
+  }
 }

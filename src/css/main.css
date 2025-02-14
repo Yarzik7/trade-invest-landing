@@ -699,9 +699,46 @@ h3 {
 .reviews-container {
   position: relative;
 }
+@media screen and (min-width: 1440px) {
+  .reviews-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-section-title {
+    width: 509px;
+  }
+}
 
 .reviews-swiper {
   padding-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .reviews-swiper {
+    width: 508px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews-swiper {
+    width: 633px;
+    padding-top: 27px;
+    padding-left: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper.reviews-swiper {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .user-info-box {
@@ -717,6 +754,21 @@ h3 {
           align-items: center;
   gap: 8px;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .user-info-box {
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .user-info-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .avatar-box {
@@ -735,8 +787,10 @@ h3 {
      object-position: center;
 }
 
-.user-credentials {
-  text-align: center;
+@media screen and (max-width: 1439px) {
+  .user-credentials {
+    text-align: center;
+  }
 }
 
 .username {
@@ -781,6 +835,23 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) {
+  .review::before {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .review::before {
+    position: absolute;
+    left: -48px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .review {
+    position: relative;
+    text-align: left;
+  }
+}
 
 .slider-control-box {
   position: absolute;
@@ -795,6 +866,22 @@ h3 {
           justify-content: space-between;
   width: 100%;
   padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .slider-control-box {
+    bottom: 165px;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .slider-control-box {
+    bottom: 37px;
+    padding: 0 120px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 16px;
+  }
 }
 
 .slider-button-prev,
@@ -849,6 +936,17 @@ h3 {
 .swiper-pagination {
   bottom: 15px;
   pointer-events: none;
+}
+@media screen and (min-width: 768px) {
+  .swiper-pagination {
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .swiper-pagination {
+    text-align: left;
+    padding-left: 48px;
+  }
 }
 
 .faq-section {

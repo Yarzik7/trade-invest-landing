@@ -8,6 +8,6 @@ const swiper = new Swiper('.reviews-swiper', {
     prevEl: '.reviews-slider-button-prev',
   },
   slidesPerView: 1,
-  spaceBetween: 16,
+  spaceBetween: 50,
   loop: true,
 });
