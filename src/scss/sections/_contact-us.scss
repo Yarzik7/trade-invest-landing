@@ -116,6 +116,8 @@
 }
 
 .input-box {
+  position: relative;
+
   &:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -157,6 +159,23 @@
   &:invalid {
     border-color: $invalid-input-color;
   }
+
+  &:invalid + .invalid-input-message {
+    display: block;
+  }
+}
+
+.invalid-input-message {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+
+  display: none;
+  @include font(15, 16);
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 500;
+
+  color: $invalid-input-color;
 }
 
 .message-input {

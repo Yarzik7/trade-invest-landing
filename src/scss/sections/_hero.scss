@@ -40,6 +40,16 @@
   }
 }
 
+.hero-description-box {
+  @include media(tabletOnly) {
+    margin: 0 auto;
+  }
+
+  @include media(desktop) {
+    width: 585px;
+  }
+}
+
 .hero-description {
   margin-bottom: 32px;
 

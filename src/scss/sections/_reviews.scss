@@ -9,8 +9,18 @@
 }
 
 .reviews-section-title {
+  &::after {
+    width: 254px;
+
+    @include media(tablet) {
+      width: 168px;
+    }
+  }
+
   @include media(tablet) {
     width: 509px;
+    height: 132px;
+    margin-bottom: 0;
   }
 }
 
@@ -163,16 +173,18 @@
   border: 1px solid $btn-disabled-bg-color;
   border-radius: 50%;
 
-  @include transition(background-color, fill);
+  @include transition(border-color, fill);
 
   &:hover {
-    background-color: $btn-hover-bg-color;
-    fill: white;
+    border-color: $btn-hover-bg-color;
   }
 
   &:active {
-    background-color: $btn-active-bg-color;
-    fill: white;
+    border-color: $btn-active-bg-color;
+  }
+
+  &:focus {
+    outline-offset: 3px;
   }
 }
 

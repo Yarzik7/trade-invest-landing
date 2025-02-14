@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TradeInvest</title>
+    <link rel="icon" href="./src/images/favicon.svg" sizes="any" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
@@ -22,13 +23,55 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="/index.html" class="logo">Logo</a>
+        <a href="/index.html" class="logo header-logo">Logo</a>
 
-        <button type="button" class="burger-menu-button js-menu-btn">
-          <svg width="24" height="24" class="burger-menu-icon">
-            <use href="./src/images/sprite.svg#burger-menu"></use>
-          </svg>
-        </button>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">How it works</a>
+            </li>
+
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">About</a>
+            </li>
+
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">Instructions</a>
+            </li>
+
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">Accounts</a>
+            </li>
+
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">Platforms</a>
+            </li>
+
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-control-box">
+          <div class="lang-select-box">
+            <input type="text" class="lang-select-input" value="en" readonly />
+
+            <div class="lang-select-icon-container">
+              <svg width="24" height="24" class="chevron-icon">
+                <use href="./src/images/sprite.svg#chevron"></use>
+              </svg>
+            </div>
+          </div>
+
+          <button type="button" class="action-button auth-action-button">Sign in for free</button>
+
+          <button type="button" class="burger-menu-button js-menu-btn">
+            <svg width="24" height="24" class="burger-menu-icon">
+              <use href="./src/images/sprite.svg#burger-menu"></use>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <div class="burger-menu js-burger-menu">
@@ -85,7 +128,7 @@
               convenient platform for access to global exchanges. You can work anywhere.
             </p>
 
-            <button type="button" class="action-button hero-action-button">Start trading</button>
+            <a href="#contact-us" class="action-button hero-action-button">Start trading</a>
           </div>
 
           <div class="hero-image-box">
@@ -440,10 +483,18 @@
             <fieldset class="fieldset">
               <legend class="visually-hidden">Contact us form</legend>
               <div class="input-box">
-                <input type="text" placeholder="Name" class="input" />
+                <input type="text" placeholder="Name" required class="input" />
+                <p class="invalid-input-message">Incorrect name</p>
               </div>
               <div class="input-box">
-                <input type="email" placeholder="Email" class="input" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                  required
+                  class="input"
+                />
+                <p class="invalid-input-message">Incorrect email type</p>
               </div>
               <div class="input-box">
                 <textarea placeholder="Message" class="message-input"></textarea>

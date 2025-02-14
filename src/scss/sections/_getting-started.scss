@@ -1,5 +1,19 @@
 .getting-started-section-title {
+  width: 250px;
+
   text-align: left;
+
+  &::after {
+    width: 214px;
+
+    @include media(tablet) {
+      width: 350px;
+    }
+
+    @include media(desktop) {
+      width: 296px;
+    }
+  }
 
   @include media(tablet) {
     width: 419px;

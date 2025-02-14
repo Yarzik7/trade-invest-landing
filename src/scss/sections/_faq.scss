@@ -11,6 +11,14 @@
 }
 
 .faq-section-title {
+  &::after {
+    width: 195px;
+
+    @include media(tablet) {
+      width: 263px;
+    }
+  }
+
   @include media(desktop) {
     width: 483px;
   }

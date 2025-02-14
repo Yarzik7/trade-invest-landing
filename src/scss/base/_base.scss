@@ -52,9 +52,27 @@ h3 {
 }
 
 .section-title {
+  position: relative;
+
   margin-bottom: 40px;
 
   @include font(40, 44);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+    height: 50px;
+
+    background-color: $bg-title-decor;
+
+    @include media(desktop) {
+      height: 72px;
+    }
+  }
 
   @include media(tablet) {
     margin-bottom: 56px;
