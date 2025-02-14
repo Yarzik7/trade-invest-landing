@@ -1,26 +1,90 @@
 .footer {
-  margin-top: 46px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+
+  &__logo {
+    padding: 14px 0;
+    margin-bottom: 2px;
+
+    @include media(tablet) {
+      margin-bottom: 24px;
+    }
+
+    @include media(desktop) {
+      order: 1;
+      margin-bottom: 0;
+      height: fit-content;
+    }
+  }
+
+  @include media(desktop) {
+    padding-top: 18px;
+    padding-bottom: 64px;
+  }
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 32px;
+}
+
+.legal-info-container {
+  margin-bottom: 32px;
+
+  @include media(tablet) {
+    margin-bottom: 40px;
+  }
+
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 16px;
+
+  @include media(tablet) {
+    margin-bottom: 24px;
+  }
+
+  @include media(desktop) {
+    margin-top: -2px;
+  }
 }
 
 .footer-nav-list {
   &__item {
-    &:not(:last-child) {
-      margin-bottom: 32px;
-    }
+    // &:not(:last-child) {
+    //   margin-bottom: 32px;
+    // }
   }
 
   &__link {
+    display: block;
+    padding: 16px 0;
+
     font-family: 'Museo Sans Cyrl', sans-serif;
     @include font(15, 16);
     font-weight: 500;
     color: $title-color;
+
+    @include media(desktop) {
+      padding: 12px 0;
+    }
+  }
+
+  @include media(tabletOnly) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  @include media(desktop) {
+    padding-top: 2px;
   }
 }
 
@@ -29,15 +93,43 @@
     &:not(:last-child) {
       margin-bottom: 24px;
     }
+
+    @include media(tablet) {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+
+    @include media(desktop) {
+      width: 380px;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__title {
     margin-bottom: 16px;
     @include font(18, 30);
+
+    @include media(tabletOnly) {
+      text-align: center;
+    }
   }
 
   &__description {
     @include font(16, 27);
+  }
+
+  @include media(tabletOnly) {
+    padding: 0 90px;
+  }
+
+  @include media(desktop) {
+    display: flex;
+    gap: 30px;
+    margin-top: 14px;
   }
 }
 
@@ -45,6 +137,12 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .center-note {
@@ -53,15 +151,23 @@
 }
 
 .legal-pages-nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 16px;
 
   &__item {
     text-align: center;
   }
 
   &__link {
+    display: block;
+    padding: 8px 0;
+
     @include font(16, 27);
+  }
+
+  @include media(desktop) {
+    display: flex;
+    gap: 66px;
   }
 }
