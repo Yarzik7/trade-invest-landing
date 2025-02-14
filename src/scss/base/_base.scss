@@ -25,6 +25,14 @@ h3 {
 .section {
   margin: 0 auto;
   padding-top: 80px;
+
+  @include media(tablet) {
+    padding-top: 120px;
+  }
+
+  @include media(desktop) {
+    padding-top: 140px;
+  }
 }
 
 .container {

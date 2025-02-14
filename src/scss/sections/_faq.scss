@@ -1,5 +1,19 @@
 .faq-section {
   padding-bottom: 80px;
+
+  @include media(tablet) {
+    padding-bottom: 120px;
+  }
+
+  @include media(desktop) {
+    padding-bottom: 140px;
+  }
+}
+
+.faq-section-title {
+  @include media(desktop) {
+    width: 483px;
+  }
 }
 
 .faq-list {
@@ -20,6 +34,10 @@
     &.active .faq-list__answer {
       max-height: 100vh;
     }
+
+    @include media(tablet) {
+      padding: 31px 38px;
+    }
   }
 
   &__item:not(:last-child) {
@@ -28,6 +46,10 @@
 
   &__question {
     @include font(18, 21.6);
+
+    @include media(tablet) {
+      @include font(24, 28.8);
+    }
   }
 
   &__answer {
@@ -36,6 +58,18 @@
     max-height: 0;
     overflow: hidden;
     @include transition(max-height);
+
+    @include media(tablet) {
+      width: 558px;
+    }
+
+    @include media(desktop) {
+      width: 750px;
+    }
+  }
+
+  @include media(desktop) {
+    padding: 0 102px;
   }
 }
 
